@@ -3,9 +3,9 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "empurple",
+    title: "Empurple",
     // 站点描述
-    description: "基于 vitepress-theme-curve 搭建的 github pages 站点",
+    // description: "基于 vitepress-theme-curve 搭建的 github pages 站点",
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
@@ -14,10 +14,10 @@ export const themeConfig = {
     lang: "zh-CN",
     // 作者
     author: {
-      name: "雨天狂奔",
+      name: "dtrthg",
       cover: "/images/logo/logo.webp",
-      email: "admin@24811213.xyz",
-      link: "https://daoyi.hidns.vip/#/",
+      email: "3442804166@qq.com",
+      // link: "https://daoyi.hidns.vip/#/",
     },
   },
   // 备案信息
@@ -121,17 +121,17 @@ export const themeConfig = {
     {
       text: "专栏",
       items: [
-        { text: "技术分享", link: "/pages/categories/技术分享", icon: "technical" },
+        // { text: "技术分享", link: "/pages/categories/技术分享", icon: "technical" },
         { text: "我的项目", link: "/pages/project", icon: "code" },
-        { text: "收藏大全", link: "https://daoyi.hidns.vip/#/", icon: "tools" },
-        { text: "工作备忘", link: "/pages/categories/工作备忘", icon: "people" },
+        // { text: "收藏大全", link: "https://daoyi.hidns.vip/#/", icon: "tools" },
+        // { text: "工作备忘", link: "/pages/categories/工作备忘", icon: "people" },
         //{ text: "效率工具", link: "/pages/tools", icon: "tools" },
       ],
     },
     {
       text: "友圈",
       items: [
-        { text: "友圈鱼塘", link: "/pages/friends", icon: "fish" },
+        // { text: "友圈鱼塘", link: "/pages/friends", icon: "fish" },
         { text: "友情链接", link: "/pages/link", icon: "people" },
         { text: "畅所欲言", link: "/pages/message", icon: "chat" },
       ],
