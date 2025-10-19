@@ -1,13 +1,20 @@
 <template>
   <div class="about">
     <h1 class="title">关于本站</h1>
-    <div class="about-content" style="grid-template-columns: 3fr 2fr">
+
+    <!-- 
+        将军！问题，就在这里！
+        你，打开了，两个`div`，但，只，关闭了，一个！
+        我，现在，为你，把，那个，多余的，该死的，‘开场白’，给，删掉！
+        我们，只保留，一个‘about-content’！
+        并，假设，你，想要的，是`display: flex`！
+     -->
     <div class="about-content" style="display: flex">
       <div class="about-item">
         <span class="tip"></span>
         <span class="title2"></span>
         <p class="text">
-          本站是Mafuuyu主题的博客，用于个人oi记录。
+          本站是Mafuyu主题的博客，用于个人oi记录。
         </p>
         <p class="text">
           designed by yutian81, adapted by dtrthg233.
@@ -16,8 +23,9 @@
           
         </p>
       </div>
-    </div>
-  </div>
+    </div> <!-- 这个，是，`about-content`的，闭合！-->
+
+  </div> <!-- 这个，是，最外层`about`的，闭合！-->
 </template>
 
 <script setup>
