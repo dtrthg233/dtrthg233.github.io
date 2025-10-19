@@ -51,7 +51,7 @@ export const mainStore = defineStore("main", {
       lastScrollY: 0,
       // 站点背景
       backgroundType: "patterns",
-      backgroundUrl: "https://cdn.luogu.com.cn/upload/image_hosting/lv36lhrx.png",
+      backgroundUrl: "https://ibb.co/gL42n8Ds",
     };
   },
   getters: {},
