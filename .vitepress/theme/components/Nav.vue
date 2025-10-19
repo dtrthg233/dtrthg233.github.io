@@ -51,8 +51,7 @@
           </span>
         </div>
         <div class="right-nav">
-        
-          </a>
+          
           <!-- 随机文章 -->
           <div
             class="menu-btn nav-btn"
