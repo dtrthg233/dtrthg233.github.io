@@ -5,17 +5,17 @@ export const themeConfig = {
     // 站点标题
     title: "Empurple",
     // 站点描述
-    // description: "基于 vitepress-theme-curve 搭建的 github pages 站点",
+    description: "my blog",
     // 站点logo
-    logo: "/images/logo/logo.webp",
+    logo: "/images/logo/mfy_welcome.png",
     // 站点地址
-    site: "https://blog2.811520.xyz",
+    // site: "https://blog2.811520.xyz",
     // 语言
     lang: "zh-CN",
     // 作者
     author: {
       name: "dtrthg",
-      cover: "/images/logo/logo.webp",
+      cover: "/images/logo/mfy_welcome.png",
       email: "3442804166@qq.com",
       // link: "https://daoyi.hidns.vip/#/",
     },
