@@ -23,7 +23,7 @@ export const themeConfig = {
   // 备案信息
   icp: "萌ICP备0127号",
   // 建站日期
-  since: "2025-10-25",
+  since: "2025-10-20",
   // 每页文章数据
   postSize: 8,
   // inject
