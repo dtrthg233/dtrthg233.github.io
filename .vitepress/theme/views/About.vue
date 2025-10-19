@@ -2,19 +2,18 @@
   <div class="about">
     <h1 class="title">关于本站</h1>
     <div class="about-content" style="grid-template-columns: 3fr 2fr">
-    <!-- 心路历程 -->
     <div class="about-content" style="display: flex">
       <div class="about-item">
-        <span class="tip">心路历程</span>
-        <span class="title2">为什么建站？</span>
+        <span class="tip"></span>
+        <span class="title2"></span>
         <p class="text">
-          创建这个站的时候，想要就是能够有一个自己能够<strong>积累知识</strong>、<strong>积累兴趣</strong>的地方。和他人分享，会让这些成为<strong>积累和沉淀</strong>。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。
+          本站是Mafuuyu主题的博客，用于个人oi记录。
         </p>
         <p class="text">
-          这里内容很杂，<strong>工作、生活、资源分享……</strong>什么都有，可能不太会有很多人看，权当是做个自我记录吧。当然，如果某篇文章能够帮助到你，那我也是很开心的。
+          designed by yutian81, adapted by dtrthg233.
         </p>
         <p class="text">
-          这些就是创造这个小站的本意，<strong>也是我分享生活的方式</strong>。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。
+          
         </p>
       </div>
     </div>
