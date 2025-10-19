@@ -3,9 +3,9 @@
 
 // 全局颜色变量
 :root {
-  --main-color: #425aef;
-  --main-color-bg: #4259ef0d;
-  --main-site-background: #f7f9fe;
+  --main-color: #8888CC;
+  --main-color-bg: rgba(136, 136, 204, 0.1);
+  --main-site-background: #F0F0F8;
   --main-card-background: #fff;
   --main-card-second-background: #f7f7f9;
   --main-font-color: #363636;
@@ -36,10 +36,10 @@
 }
 
 html.dark {
-  --main-color: #dfac46;
-  --main-color-bg: #f2b94b23;
-  --main-site-background: #18171d;
-  --main-card-background: #1b1c20;
+  --main-color: #8888CC;
+  --main-color-bg: rgba(136, 136, 204, 0.15);
+  --main-site-background: #1E1E2A;
+  --main-card-background: #D0D0E0;
   --main-card-second-background: #21232a;
   --main-font-color: #f7f7fa;
   --main-font-second-color: #a1a2b8;
