@@ -51,7 +51,7 @@ export const mainStore = defineStore("main", {
       lastScrollY: 0,
       // 站点背景
       backgroundType: "patterns",
-      backgroundUrl: "dtrthg233.github.io/public/images/logo/mfy_bg.webp",
+      backgroundUrl: "images/logo/mfy_bg.webp",
     };
   },
   getters: {},
