@@ -142,7 +142,7 @@ export const themeConfig = {
         { text: "关于本站", link: "/pages/about", icon: "contacts" },
         { text: "隐私政策", link: "/pages/privacy", icon: "chat" },
         { text: "版权协议", link: "/pages/cc", icon: "people" },
-        { text: "致谢名单", link: "/pages/thanks", icon: "reward" },
+        // { text: "致谢名单", link: "/pages/thanks", icon: "reward" },
       ],
     },
   ],
@@ -257,78 +257,78 @@ export const themeConfig = {
     social: [
       {
         icon: "email",
-        link: "mailto:admin@24811213.xyz",
+        link: "3442804166@qq.com",
       },
       {
         icon: "github",
-        link: "https://github.com/yutian81/",
+        link: "https://github.com/dtrthg233/",
       },
+      // {
+      //   icon: "telegram",
+      //   link: "https://t.me/yutian88881",
+      // },
       {
-        icon: "telegram",
-        link: "https://t.me/yutian88881",
-      },
-      {
-        icon: "bilibili",
-        link: "https://space.bilibili.com/677845115",
+        icon: "luogu",
+        link: "https://www.luogu.com.cn/user/379113",
       },
     ],
     // sitemap
     sitemap: [
+      // {
+      //   text: "我的博客",
+      //   items: [
+      //     { text: "近期文章", link: "/" },
+      //     { text: "全部分类", link: "/pages/categories" },
+      //     { text: "全部标签", link: "/pages/tags" },
+      //     { text: "文章归档", link: "/pages/archives" },
+      //   ],
+      // },
+      // {
+      //   text: "云端平台",
+      //   items: [
+      //     { text: "Vercel", link: "https://vercel.com/", newTab: true },
+      //     { text: "NorthFlank", link: "https://app.northflank.com/", newTab: true },
+      //     { text: "Koyeb", link: "https://app.koyeb.com/", newTab: true },
+      //     { text: "Huawei", link: "https://www.huaweicloud.com/intl/zh-cn/", newTab: true },
+      //   ],
+      // },
       {
-        text: "我的博客",
+        text: "OJ",
         items: [
-          { text: "近期文章", link: "/" },
-          { text: "全部分类", link: "/pages/categories" },
-          { text: "全部标签", link: "/pages/tags" },
-          { text: "文章归档", link: "/pages/archives" },
+          { text: "洛谷", link: "https://www.luogu.com.cn/" },
+          { text: "cf", link: "https://codeforces.com/" },
+          { text: "atcoder", link: "https://atcoder.jp" },
+          // { text: "工作备忘", link: "/pages/categories/工作备忘" },
         ],
       },
       {
-        text: "云端平台",
+        text: "工具",
         items: [
-          { text: "Vercel", link: "https://vercel.com/", newTab: true },
-          { text: "NorthFlank", link: "https://app.northflank.com/", newTab: true },
-          { text: "Koyeb", link: "https://app.koyeb.com/", newTab: true },
-          { text: "Huawei", link: "https://www.huaweicloud.com/intl/zh-cn/", newTab: true },
-        ],
-      },
-      {
-        text: "我的专栏",
-        items: [
-          { text: "技术分享", link: "/pages/categories/技术分享" },
-          { text: "我的项目", link: "/pages/project" },
-          { text: "收藏大全", link: "https://daoyi.hidns.vip/#/", newTab: true },
-          { text: "工作备忘", link: "/pages/categories/工作备忘" },
-        ],
-      },
-      {
-        text: "项目推荐",
-        items: [
-          { text: "edgetunnel", link: "https://github.com/cmliu/edgetunnel", newTab: true },
-          { text: "twikoo", link: "https://github.com/yutian81/twikoo", newTab: true },
-          { text: "alist", link: "https://alist.nn.ci/zh/", newTab: true },
-          { text: "nezha", link: "https://nezha.wiki/guide/dashboard.html", newTab: true },
+          { text: "图论绘图", link: "https://csacademy.com/app/graph_editor/"},
+          { text: "geogebra", link: "geogebra.org"},
+          // { text: "alist", link: "https://alist.nn.ci/zh/", newTab: true },
+          // { text: "nezha", link: "https://nezha.wiki/guide/dashboard.html", newTab: true },
         ],
       }, 
-      {        
-        text: "页面导航",
-        items: [
-          //{ text: "畅所欲言", link: "/pages/message" },
-          { text: "关于本站", link: "/pages/about" },
-          { text: "隐私政策", link: "/pages/privacy" },
-          { text: "版权协议", link: "/pages/cc" },
-          { text: "致谢名单", link: "/pages/thanks" },
-        ],
-      },
-      {
-        text: "网站服务",
-        items: [
-          { text: "音乐时刻", link: "https://blog.811520.xyz/music/", newTab: true },
-          { text: "站点状态", link: "https://uptime.ytian.us.kg/status/service", newTab: true },
-          { text: "站点订阅", link: "https://blog2.811520.xyz/rss.xml", newTab: true },
-          { text: "问题反馈", link: "https://github.com/yutian81/yutian81.github.io/issues", newTab: true, },
-        ],
-      },
+      // {        
+      //   text: "页面导航",
+      //   items: [
+      //     //{ text: "畅所欲言", link: "/pages/message" },
+      //     { text: "关于本站", link: "/pages/about" },
+      //     { text: "隐私政策", link: "/pages/privacy" },
+      //     { text: "版权协议", link: "/pages/cc" },
+      //     { text: "致谢名单", link: "/pages/thanks" },
+      //   ],
+      // },
+      // {
+      //   text: "网站服务",
+      //   items: [
+      //     { text: "音乐时刻", link: "https://blog.811520.xyz/music/", newTab: true },
+      //     { text: "站点状态", link: "https://uptime.ytian.us.kg/status/service", newTab: true },
+      //     { text: "站点订阅", link: "https://blog2.811520.xyz/rss.xml", newTab: true },
+      //     { text: "问题反馈", link: "https://github.com/yutian81/yutian81.github.io/issues", newTab: true, },
+      //   ],
+      // },
     ],
   },
   // 评论
