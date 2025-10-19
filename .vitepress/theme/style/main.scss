@@ -3,7 +3,7 @@
 
 // 全局颜色变量
 :root {
-  --main-color: #8888CC;
+  --main-color: #8888CC !important;
   --main-color-bg: rgba(136, 136, 204, 0.1);
   --main-site-background: #F0F0F8;
   --main-card-background: #fff;
@@ -36,7 +36,7 @@
 }
 
 html.dark {
-  --main-color: #8888CC;
+  --main-color: #8888CC !important;
   --main-color-bg: rgba(136, 136, 204, 0.15);
   --main-site-background: #1E1E2A;
   --main-card-background: #D0D0E0;
