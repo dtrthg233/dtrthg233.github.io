@@ -3,7 +3,7 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "九天之上",
+    title: "empurple",
     // 站点描述
     description: "基于 vitepress-theme-curve 搭建的 github pages 站点",
     // 站点logo
@@ -21,9 +21,9 @@ export const themeConfig = {
     },
   },
   // 备案信息
-  icp: "鄂ICP备202411-001号",
+  icp: "萌ICP备0127号",
   // 建站日期
-  since: "2024-11-1",
+  since: "2025-10-25",
   // 每页文章数据
   postSize: 8,
   // inject
