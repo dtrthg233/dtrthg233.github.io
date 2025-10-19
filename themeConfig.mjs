@@ -152,22 +152,22 @@ export const themeConfig = {
       name: "博客",
       list: [
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/logo/mfy_welcome.png",
           name: "博客主站",
           url: "/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/logo/mfy_welcome.png",
           name: "博客演示站",
           url: "/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/logo/mfy_welcome.png",
           name: "个人主页",
           url: "https://daoyi.hidns.vip/#/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/logo/mfy_welcome.png",
           name: "私有工具",
           url: "/",
         },

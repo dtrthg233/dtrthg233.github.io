@@ -7,7 +7,7 @@ export const themeConfig = {
     // 站点描述
     description: "Hello World",
     // 站点logo
-    logo: "/images/logo/logo.webp",
+    logo: "/images/logo/mfy_welcome.png",
     // 站点地址
     site: "https://blog.imsyy.top",
     // 语言
@@ -15,7 +15,7 @@ export const themeConfig = {
     // 作者
     author: {
       name: "Admin",
-      cover: "/images/logo/logo.webp",
+      cover: "/images/logo/mfy_welcome.png",
       email: "114514@gmail.com",
       link: "https://www.imsyy.top",
     },
@@ -148,12 +148,12 @@ export const themeConfig = {
       name: "博客",
       list: [
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/logo/mfy_welcome.png",
           name: "主站",
           url: "/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/logo/mfy_welcome.png",
           name: "博客镜像站",
           url: "https://blog-backup.imsyy.top/",
         },
@@ -183,7 +183,7 @@ export const themeConfig = {
       name: "项目",
       list: [
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/logo/mfy_welcome.png",
           name: "Curve",
           url: "https://github.com/imsyy/vitepress-theme-curve",
         },
@@ -198,7 +198,7 @@ export const themeConfig = {
           url: "https://github.com/imsyy/SPlayer",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "/images/logo/mfy_welcome.png",
           name: "Home",
           url: "https://github.com/imsyy/home",
         },
