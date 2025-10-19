@@ -128,14 +128,14 @@ export const themeConfig = {
         //{ text: "效率工具", link: "/pages/tools", icon: "tools" },
       ],
     },
-    {
-      text: "友圈",
-      items: [
-        // { text: "友圈鱼塘", link: "/pages/friends", icon: "fish" },
-        // { text: "友情链接", link: "/pages/link", icon: "people" },
-        { text: "畅所欲言", link: "/pages/message", icon: "chat" },
-      ],
-    },
+    // {
+    //   text: "友圈",
+    //   items: [
+    //     // { text: "友圈鱼塘", link: "/pages/friends", icon: "fish" },
+    //     // { text: "友情链接", link: "/pages/link", icon: "people" },
+    //     { text: "畅所欲言", link: "/pages/message", icon: "chat" },
+    //   ],
+    // },
     {
       text: "关于",
       items: [
