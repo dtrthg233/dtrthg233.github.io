@@ -374,8 +374,8 @@ export const themeConfig = {
       enable: true,
       // 倒计时日期
       data: {
-        name: "朝比奈真冬的生日",
-        date: "2008-01-27",
+        name: "朝比奈真冬的下一次生日",
+        date: "2026-01-27",
       },
     },
     // 站点数据
