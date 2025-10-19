@@ -359,7 +359,7 @@ export const themeConfig = {
     // 站点简介
     hello: {
       enable: true,
-      text: "这里有我的各种<strong>折腾笔记</strong>，也有一些<strong>工作备忘</strong>和<strong>生活随笔</strong>。又菜又爱玩，<strong>万事都不难</strong>。",
+      text: "25时，Nightcord见。",
     },
     // 目录
     toc: {
@@ -374,8 +374,8 @@ export const themeConfig = {
       enable: true,
       // 倒计时日期
       data: {
-        name: "春节",
-        date: "2025-05-01",
+        name: "朝比奈真冬的生日",
+        date: "2008-01-27",
       },
     },
     // 站点数据
