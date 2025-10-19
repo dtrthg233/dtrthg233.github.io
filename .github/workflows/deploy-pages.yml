@@ -17,7 +17,7 @@ jobs:
     env:
       REPO_URL: "dtrthg233/github.io"  # 远程仓库的 URL
       BUILD_PATH: ".vitepress/dist"  # 构建输出路径
-      CUSTOM_DOMAIN: "null_pointer.gc"  # 自定义域名
+      CUSTOM_DOMAIN: "dtrthg233.github.io"  # 自定义域名
 
     steps:
       - name: Set up Node.js
