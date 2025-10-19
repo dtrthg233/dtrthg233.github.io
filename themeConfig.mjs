@@ -3,11 +3,11 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "Empurple",
+    title: "self.find()",
     // 站点描述
     description: "my blog",
     // 站点logo
-    logo: "/images/logo/mfy_welcome.png",
+    logo: "/images/logo/logo.webp",
     // 站点地址
     // site: "https://blog2.811520.xyz",
     // 语言
@@ -15,7 +15,7 @@ export const themeConfig = {
     // 作者
     author: {
       name: "dtrthg",
-      cover: "/images/logo/mfy_welcome.png",
+      cover: "/images/logo/logo.webp",
       email: "3442804166@qq.com",
       // link: "https://daoyi.hidns.vip/#/",
     },
@@ -147,93 +147,93 @@ export const themeConfig = {
     },
   ],
   // 导航栏菜单 - 左侧
-  navMore: [
-    {
-      name: "博客",
-      list: [
-        {
-          icon: "/images/logo/mfy_welcome.png",
-          name: "博客主站",
-          url: "/",
-        },
-        {
-          icon: "/images/logo/mfy_welcome.png",
-          name: "博客演示站",
-          url: "/",
-        },
-        {
-          icon: "/images/logo/mfy_welcome.png",
-          name: "个人主页",
-          url: "https://daoyi.hidns.vip/#/",
-        },
-        {
-          icon: "/images/logo/mfy_welcome.png",
-          name: "私有工具",
-          url: "/",
-        },
-      ],
-    },
-    {
-      name: "常用",
-      list: [
-        {
-          icon: "https://cover.ruom.top/favicon.ico",
-          name: "封面制作",
-          url: "https://cover.ruom.top/",
-        },
-        {
-          icon: "https://www.favicon.vip/get.php?url=img.ytian.us.kg",
-          name: "兰空图床",
-          url: "https://img.811520.xyz/",
-        },
-        {
-          icon: "https://pan.811520.xyz/2024-10/插入链接.webp",
-          name: "短链生成",
-          url: "https://slink.yuzong.nyc.mn/duanlian",  
-        },
-        {
-          icon: "https://ctool.dev/favicon.ico",
-          name: "开发工具",
-          url: "https://ctool.dev/",
-        },
-        {
-          icon: "https://suburl.v1.mk/favicon.ico",
-          name: "图片压缩",
-          url: "https://imgtool.v1.mk/",
-        },
-        {
-          icon: "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
-          name: "博客仓库",
-          url: "https://github.com/yutian81/yutian81.github.io",
-        },
-      ],
-    },
-    {
-      name: "服务",
-      list: [
-        {
-          icon: "https://pan.811520.xyz/2024-11/1730875618-1730875614898.webp",
-          name: "今日热榜",
-          url: "https://hot.imsyy.top/",
-        },
-        {
-          icon: "https://rss.811520.xyz/favicon.ico",
-          name: "友圈后端",
-          url: "https://rss.811520.xyz/",
-        },
-        {
-          icon: "https://pan.811520.xyz/2024-11/1730634973-Cloudflare_Logo.webp",
-          name: "CF优选",
-          url: "https://blog2.811520.xyz/blogrss/",
-        },
-        {
-          icon: "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
-          name: "Serv00",
-          url: "https://github.com/yutian81/serv00-ct8-ssh",
-        },
-      ],
-    },
-  ],
+  // // navMore: [
+  //   // {
+  //   //   name: "博客",
+  //   //   list: [
+  //   //     {
+  //   //       icon: "/images/logo/mfy_welcome.png",
+  //   //       name: "博客主站",
+  //   //       url: "/",
+  //   //     },
+  //   //     {
+  //   //       icon: "/images/logo/mfy_welcome.png",
+  //   //       name: "博客演示站",
+  //   //       url: "/",
+  //   //     },
+  //   //     {
+  //   //       icon: "/images/logo/mfy_welcome.png",
+  //   //       name: "个人主页",
+  //   //       url: "https://daoyi.hidns.vip/#/",
+  //   //     },
+  //   //     {
+  //   //       icon: "/images/logo/mfy_welcome.png",
+  //   //       name: "私有工具",
+  //   //       url: "/",
+  //   //     },
+  //   //   ],
+  //   // },
+  //   {
+  // //     name: "常用",
+  // //     list: [
+  // //       {
+  // //         icon: "https://cover.ruom.top/favicon.ico",
+  // //         name: "洛谷博客",
+  // //         url: "https://cover.ruom.top/",
+  // //       },
+  // //       {
+  // //         icon: "https://www.favicon.vip/get.php?url=img.ytian.us.kg",
+  // //         name: "兰空图床",
+  // //         url: "https://img.811520.xyz/",
+  // //       },
+  // //       {
+  // //         icon: "https://pan.811520.xyz/2024-10/插入链接.webp",
+  // //         name: "短链生成",
+  // //         url: "https://slink.yuzong.nyc.mn/duanlian",  
+  // //       },
+  // //       {
+  // //         icon: "https://ctool.dev/favicon.ico",
+  // //         name: "开发工具",
+  // //         url: "https://ctool.dev/",
+  // //       },
+  // //       {
+  // //         icon: "https://suburl.v1.mk/favicon.ico",
+  // //         name: "图片压缩",
+  // //         url: "https://imgtool.v1.mk/",
+  // //       },
+  // //       {
+  // //         icon: "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
+  // //         name: "博客仓库",
+  // //         url: "https://github.com/yutian81/yutian81.github.io",
+  // //       },
+  // //     ],
+  // //   },
+  // //   {
+  // //     name: "服务",
+  // //     list: [
+  // //       {
+  // //         icon: "https://pan.811520.xyz/2024-11/1730875618-1730875614898.webp",
+  // //         name: "今日热榜",
+  // //         url: "https://hot.imsyy.top/",
+  // //       },
+  // //       {
+  // //         icon: "https://rss.811520.xyz/favicon.ico",
+  // //         name: "友圈后端",
+  // //         url: "https://rss.811520.xyz/",
+  // //       },
+  // //       {
+  // //         icon: "https://pan.811520.xyz/2024-11/1730634973-Cloudflare_Logo.webp",
+  // //         name: "CF优选",
+  // //         url: "https://blog2.811520.xyz/blogrss/",
+  // //       },
+  // //       {
+  // //         icon: "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
+  // //         name: "Serv00",
+  // //         url: "https://github.com/yutian81/serv00-ct8-ssh",
+  // //       },
+  // //     ],
+  // //   },
+  // // ],
   // 封面配置
   cover: {
     // 是否开启双栏布局
