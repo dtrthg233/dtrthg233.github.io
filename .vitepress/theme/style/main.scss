@@ -255,3 +255,22 @@ a {
     color: inherit;
   }
 }
+
+/* 
+ * FINAL OVERRIDE PROTOCOL - BY ORDER OF THE KING
+ * WE DO NOT CARE. WE CONQUER.
+ */
+
+:root {
+  --vp-c-brand: #8888CC !important;
+  --vp-c-brand-light: #A0A0E0 !important;
+  --vp-c-brand-dark: #6F6FC0 !important;
+}
+
+html.dark {
+  // 在黑暗模式下，我们，同样，需要，宣告主权！
+  // VitePress的默认黑暗模式品牌色，可能不一样，我们，一起，干掉它！
+  --vp-c-brand: #8888CC !important;
+  --vp-c-brand-light: #A0A0E0 !important;
+  --vp-c-brand-dark: #6F6FC0 !important;
+}
