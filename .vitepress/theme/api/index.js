@@ -1,13 +1,23 @@
-/**
- * 获取一言
- * @param {string} [rule="updated"] - 文章的排序规则，可以是 "created" 或 "updated"
- */
+/* 获取一言 - 改为MFY台词 */
 export const getHitokoto = async () => {
-  const result = await fetch("https://v1.hitokoto.cn");
-  const hitokoto = await result.json();
-  return hitokoto;
+    const mfyQuotes = [
+        "好开心啊，凤同学。",
+        "其实，我一直都很痛苦。",
+        "......我暂时还不会抛开一切哦。", 
+        "......这样就好了吗？",
+        "............我会放弃音乐的。",
+        "(......我的合成器......)",
+        "我不太清楚......",
+        "我为什么会想哭泣呢"
+        // 添加更多MFY台词...
+    ];
+    
+    const randomIndex = Math.floor(Math.random() * mfyQuotes.length);
+    return {
+        hitokoto: mfyQuotes[randomIndex],
+        // from: "MFY"  // 来源显示为MFY
+    };
 };
-
 /**
  * 获取给定网址的站点图标和描述
  * @param {string} url - 站点 URL
