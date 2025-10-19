@@ -154,7 +154,7 @@ export const themeConfig = {
         {
           icon: "/images/logo/logo.webp",
           name: "博客主站",
-          url: "https://blog.811520.xyz/",
+          url: "/",
         },
         {
           icon: "/images/logo/logo.webp",
@@ -169,7 +169,7 @@ export const themeConfig = {
         {
           icon: "/images/logo/logo.webp",
           name: "私有工具",
-          url: "https://blog.811520.xyz/tlink/",
+          url: "/",
         },
       ],
     },
