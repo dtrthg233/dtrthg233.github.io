@@ -1,5 +1,5 @@
 /* =================================================================== */
-/*             最终决战方案 (字体 + 背景强制注入)                        */
+/*             最终字体方案 (V3 - 稳定版)                              */
 /* =================================================================== */
 
 /* --- 1. 字体注册 (这部分保持不变) --- */
@@ -39,19 +39,15 @@
 }
 
 
-/* --- 2. 全局字体与背景强制应用 --- */
+/* --- 2. 全局字体应用与覆盖 (全新策略) --- */
+
+/* 
+  策略：首先用一个非常通用的规则，为网站的所有元素（包括文章内容）
+  都设置好基础的宋体。然后再对特定元素进行覆盖。
+*/
 
 :root, body, div, p, span, a, li {
   font-family: "BlogBodySerif", serif !important;
-}
-
-body {
-  /* --- 背景强制注入 --- */
-  background-image: url('/images/bg.png') !important; /* <-- 使用我们绝对安全的文件名 */
-  background-size: cover !important;
-  background-position: center center !important;
-  background-attachment: fixed !important;
-  background-repeat: no-repeat !important;
 }
 
 /* 博客主标题 self.find() */
