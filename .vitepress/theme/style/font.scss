@@ -43,3 +43,47 @@
   src: url("/fonts/JetBrainsMono.ttf");
   font-display: swap;
 }
+/* =================================================================== */
+/*                  博客字体应用 (最终版)                              */
+/* =================================================================== */
+
+/* --- 全局与正文 --- */
+body {
+  font-family: "BlogBodySerif", serif; /* 网站默认使用我们注册的宋体 */
+  /* 这里可以保留或调整你博客已有的其他 body 样式，如背景色等 */
+}
+
+p {
+  font-family: "BlogBodySerif", serif;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  font-size: 17px;
+}
+
+/* --- 标题 --- */
+
+/* 博客主标题 self.find() */
+h1 {
+  font-family: "BlogTitleHand", cursive; /* 使用我们注册的手写体 */
+  font-size: 3.8em;
+  font-weight: 400;
+  letter-spacing: 0.04em; /* 修复 'f' 和 'i' 的粘连问题 */
+}
+
+/* 文章标题、副标题等 */
+h2, h3, h4, .subtitle {
+  /* 优先用英文衬线体, 中文字符会自动回退到中文宋体 */
+  font-family: "BlogTitleSerif", "BlogBodySerif", serif;
+}
+
+/* --- 代码 --- */
+pre, code {
+  font-family: "BlogCode", monospace; /* 使用我们注册的代码字体 */
+}
+
+/* 
+  请注意:
+  你可能需要根据你博客的实际HTML结构, 调整 h1, h2, p 等CSS选择器。
+  例如, 你的博客名可能不是 h1 标签, 而是 .site-title 类。
+  请使用浏览器的“检查元素”功能来确认。
+*/
