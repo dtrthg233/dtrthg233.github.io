@@ -50,8 +50,8 @@ export const mainStore = defineStore("main", {
       // 上次滚动位置
       lastScrollY: 0,
       // 站点背景
-      backgroundType: "patterns",
-      backgroundUrl: "/images/card_after_training (1).png",
+      backgroundType: "image",
+      backgroundUrl: "card_after_training_before.png",
     };
   },
   getters: {},
