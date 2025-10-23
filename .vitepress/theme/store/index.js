@@ -51,7 +51,7 @@ export const mainStore = defineStore("main", {
       lastScrollY: 0,
       // 站点背景
       backgroundType: "image",
-      backgroundUrl: "card_after_training_before.png",
+      backgroundUrl: "/images/card_after_training_before.png",
     };
   },
   getters: {},
