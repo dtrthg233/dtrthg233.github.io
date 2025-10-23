@@ -1,15 +1,13 @@
 /* =================================================================== */
-/*                  博客字体注册 (最终版)                              */
+/*             最终字体方案 (V3 - 稳定版)                              */
 /* =================================================================== */
 
-// 注册 Patrick Hand (用于主标题)
+/* --- 1. 字体注册 (这部分保持不变) --- */
 @font-face {
   font-family: "BlogTitleHand";
   src: url("/fonts/PatrickHand.ttf");
   font-display: swap;
 }
-
-// 注册 Playfair Display (用于英文标题)
 @font-face {
   font-family: "BlogTitleSerif";
   src: url("/fonts/PlayfairDisplay-Bold.ttf");
@@ -22,51 +20,60 @@
   font-style: italic;
   font-display: swap;
 }
-
-// 注册 Noto Serif SC (用于中文标题和正文)
 @font-face {
   font-family: "BlogBodySerif";
   src: url("/fonts/NotoSerifSC-Regular.ttf");
-  font-weight: 400; // 常规体
+  font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "BlogBodySerif";
   src: url("/fonts/NotoSerifSC-Bold.ttf");
-  font-weight: 700; // 粗体
+  font-weight: 700;
   font-display: swap;
 }
-
-// 注册 JetBrains Mono (用于代码)
 @font-face {
   font-family: "BlogCode";
   src: url("/fonts/JetBrainsMono.ttf");
   font-display: swap;
 }
-/* =================================================================== */
-/*             样式覆盖与修复 (最终修正版)                             */
-/* =================================================================== */
 
-/* --- 博客主标题 self.find() --- */
-h1.title {
-  font-family: "BlogTitleHand", cursive !important;
-  font-size: 3.8em;
-  font-weight: 400;
-  letter-spacing: 0.04em;
+
+/* --- 2. 全局字体应用与覆盖 (全新策略) --- */
+
+/* 
+  策略：首先用一个非常通用的规则，为网站的所有元素（包括文章内容）
+  都设置好基础的宋体。然后再对特定元素进行覆盖。
+*/
+
+:root, body, div, p, span, a, li {
+  font-family: "BlogBodySerif", serif !important;
 }
 
-/* --- 修复导航栏链接字体 --- */
-/* 注意: 请确保下面的类名是你用“检查”功能找到的真实类名 */
+/* 博客主标题 self.find() */
+h1.title {
+  font-family: "BlogTitleHand", cursive !important;
+  font-size: 3.8em !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.04em !important;
+}
+
+/* 其他各级标题、副标题、文章链接等 */
+h2, h3, h4, .subtitle, .post-title, .VPDocAsideLink, .title.link {
+  font-family: "BlogTitleSerif", "BlogBodySerif", serif !important;
+}
+
+/* 导航链接 */
 .nav-link, .vp-nav-link, .VPNavBarMenuLink {
   font-family: "BlogBodySerif", serif !important;
 }
 
-/* --- 修复文章列表标题字体 --- */
-.post-title, .VPDocAsideLink, .title.link {
-  font-family: "BlogTitleSerif", "BlogBodySerif", serif !important;
+/* 代码 */
+pre, code {
+  font-family: "BlogCode", monospace !important;
 }
 
-/* --- 修复按钮和其他UI元素字体 --- */
+/* 按钮 */
 .button, .vp-button, .VPButton {
   font-family: "BlogBodySerif", serif !important;
 }
