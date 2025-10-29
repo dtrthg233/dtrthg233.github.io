@@ -1,0 +1,240 @@
+---
+title: 自用模板
+tags: [模板,总结]
+# categories: []
+date: 2025.10.28
+# description: 描述
+# articleGPT: 总结，在文章界面会有个假的 AI 输出
+---
+
+# 模板总结
+
+自用
+
+## 编译器/对拍
+
+### 缺省源
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define fo(i,a,b) for(int i=a;i<=b;++i)
+#define of(i,a,b) for(int i=a;i>=b;--i)
+#define ll long long
+#define P_B push_back
+const int inf=0x3f3f3f3f;
+const ll INF=9e18;
+const int N=;
+
+int main()
+{
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+	
+	return 0;
+}
+/*
+in1:
+
+out1:
+
+*/
+```
+
+## 数据结构
+
+### 可删堆
+
+```cpp
+
+```
+
+### 对顶堆
+
+```cpp
+
+```
+
+### 线段树
+
+注意，用区间改省掉 `build` 函数会导致常数变大。
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define fo(i,a,b) for(int i=a;i<=b;++i)
+#define of(i,a,b) for(int i=a;i>=b;--i)
+#define ll long long
+#define P_B push_back
+#define lc mid<<1
+#define rc mid<<1|1
+const int inf=0x3f3f3f3f;
+const ll INF=9e18;
+const int N=1e5+10;
+ll tr[N<<1],lzy1[N<<1],lzy2[N<<1],mod;
+//1:times 2:add
+void push_down(int l,int r,int p)
+{
+	int mid=l+r>>1;
+	tr[lc]*=lzy1[p];
+	tr[lc]+=lzy2[p]*(mid-l+1);
+	lzy1[lc]*=lzy1[p];
+	lzy2[lc]*=lzy1[p];
+	lzy2[lc]+=lzy2[p];
+	
+	tr[rc]*=lzy1[p];
+	tr[rc]+=lzy2[p]*(r-mid);
+	lzy1[rc]*=lzy1[p];
+	lzy2[rc]*=lzy1[p];
+	lzy2[rc]+=lzy2[p];
+	
+	lzy1[p]=1; lzy2[p]=0;
+	lzy1[lc]%=mod; lzy2[lc]%=mod; tr[lc]%=mod;
+	lzy1[rc]%=mod; lzy2[rc]%=mod; tr[rc]%=mod;
+}
+void updta1(int l,int r,int p,int L,int R,ll k)
+{
+	if(L<=l && r<=R) 
+	{
+		lzy2[p]*=k; lzy2[p]%=mod;
+		lzy1[p]*=k; lzy1[p]%=mod;
+		tr[p]*=k; tr[p]%=mod;
+		return ;
+	}
+	push_down(l,r,p);
+	int mid=l+r>>1;
+	if(L<=mid) updta1(l,mid,lc,L,R,k);
+	if(mid<R) updta1(mid+1,r,rc,L,R,k);
+	tr[p]=tr[lc]+tr[rc];
+}
+void updta2(int l,int r,int p,int L,int R,ll k)
+{
+	if(L<=l && r<=R)
+	{
+		lzy2[p]+=k; lzy2[p]%=mod;
+		tr[p]+=(r-l+1)*k; tr[p]%=mod;
+		return ;
+	}
+	push_down(l,r,p);
+	int mid=l+r>>1;
+	if(L<=mid) updta2(l,mid,lc,L,R,k);
+	if(mid<R) updta2(mid+1,r,rc,L,R,k);
+	tr[p]=tr[lc]+tr[rc];
+}
+ll query(int l,int r,int p,int L,int R)
+{
+	if(L<=l && r<=R) return tr[p];
+	push_down(l,r,p);
+	ll mid=l+r>>1,res=0;
+	if(L<=mid) res+=query(l,mid,lc,L,R);
+	if(mid<R)  res+=query(mid+1,r,rc,L,R);
+	return res%mod;
+}
+int main()
+{
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+	ll n,Q;cin>>n>>Q>>mod;
+	fo(i,1,n) 
+	{
+		int x;cin>>x;
+		updta2(1,n,1,i,i,x);
+	}
+	while(Q--)
+	{
+		ll op,x,y;cin>>op>>x>>y;
+		if(op==1)
+		{
+			ll k;cin>>k;
+			updta1(1,n,1,x,y,k);
+		}
+		if(op==2)
+		{
+			ll k;cin>>k;
+			updta2(1,n,1,x,y,k);
+		}
+		if(op==3) cout<<query(1,n,1,x,y)<<endl;
+	}
+	return 0;
+}
+/*
+in1:
+
+out1:
+
+*/
+```
+
+### ST表
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define fo(i,a,b) for(int i=a;i<=b;++i)
+#define of(i,a,b) for(int i=a;i>=b;--i)
+#define ll long long
+#define P_B push_back
+const int inf=0x3f3f3f3f;
+const ll INF=9e18;
+const int N=1e5+10;
+int f[N][35],lg[N];
+int main()
+{
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+	int n,T;cin>>n>>T;
+	fo(i,1,n) cin>>f[i][0];
+	fo(i,2,n) lg[i]=lg[i>>1]+1;
+	fo(j,1,25)
+		for(int i=1;i+(1<<(j-1))-1<=n;++i)
+			f[i][j]=max(f[i][j-1],f[i+(1<<(j-1))][j-1]);
+	while(T--)
+	{
+		int l,r;cin>>l>>r;
+		int stp=lg[r-l+1];
+		cout<<max(f[l][stp],f[r-(1<<stp)+1][stp])<<endl;
+	}
+	return 0;
+}
+```
+
+### 单调队列
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define fo(i,a,b) for(int i=a;i<=b;++i)
+#define of(i,a,b) for(int i=a;i>=b;--i)
+#define ll long long
+#define P_B push_back
+const int inf=0x3f3f3f3f;
+const ll INF=9e18;
+const int N=1e6+10;
+int q[N],a[N];
+int main()
+{
+	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+	int n,k;cin>>n>>k;
+	fo(i,1,n) cin>>a[i];
+	int h=1,t=0;
+	fo(i,1,n)
+	{
+		while(h<=t && q[h]<i-k+1) ++h;
+		while(h<=t && a[q[t]]>a[i]) --t;
+		q[++t]=i;
+		if(i>=k) cout<<a[q[h]]<<' ';
+	}
+	cout<<endl;
+	memset(q,0,sizeof(q));
+	h=1,t=0;
+	fo(i,1,n)
+	{
+		while(h<=t && q[h]<i-k+1) ++h;
+		while(h<=t && a[q[t]]<a[i]) --t;
+		q[++t]=i;
+		if(i>=k) cout<<a[q[h]]<<' ';
+	}
+	cout<<endl;
+	return 0;
+}
+```
+
+
+
