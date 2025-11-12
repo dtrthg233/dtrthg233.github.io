@@ -1,5 +1,5 @@
 /* =================================================================== */
-/*             最终方案 V4 (字体 + 背景 + 代码字体修正)                  */
+/*             最终决战方案 V5 (ID覆盖 + 全局修复)                       */
 /* =================================================================== */
 
 /* --- 1. 字体注册 (已确认无误) --- */
@@ -39,61 +39,53 @@
 }
 
 
-/* --- 2. 全局样式应用 (已确认无误) --- */
+/* --- 2. ID选择器强制覆盖 --- */
 
-/* 建立一个坚固的底座，确保文章等基础内容字体正确 */
-:root, body, div, p, span, a, li {
-  font-family: "BlogBodySerif", serif !important;
-}
+/* 
+  策略：将所有样式规则都挂在 #app 之下，
+  这是Vue应用的根ID，拥有极高的CSS优先级。
+*/
 
-/* 强制注入背景图片 */
-body {
+#app {
+  /* --- 背景强制注入 --- */
   background-image: url('/images/bg.png') !important;
   background-size: cover !important;
   background-position: center center !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
+
+  /* --- 全局基础字体设定 --- */
+  &, div, p, span, a, li, button, input {
+    font-family: "BlogBodySerif", serif !important;
+  }
+
+  /* --- 博客主标题 self.find() --- */
+  h1.title {
+    font-family: "BlogTitleHand", cursive !important;
+    font-size: 3.8em !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.04em !important;
+  }
+
+  /* --- 其他各级标题、副标题、文章链接等 --- */
+  h2, h3, h4, .subtitle, .post-title, .VPDocAsideLink, .title.link {
+    font-family: "BlogTitleSerif", "BlogBodySerif", serif !important;
+  }
+
+  /* --- 导航链接 与 侧边栏目录 --- */
+  .nav-link, .vp-nav-link, .VPNavBarMenuLink,
+  .VTSidebar .VTSidebarLink .link-text {
+    font-family: "BlogBodySerif", serif !important;
+  }
+  
+  /* --- 代码字体最终修正 --- */
+  /* 
+    覆盖代码块容器、代码标签、以及代码内部的所有文本片段(span)
+  */
+  .shiki, .shiki pre, .shiki code, .shiki code span,
+  div[class*="language-"] pre, div[class*="language-"] code, div[class*="language-"] code span,
+  .vp-doc pre, .vp-doc pre code, .vp-doc pre code span {
+    font-family: "BlogCode", monospace !important;
+    font-size: 14px !important; /* 设定一个统一的代码字号 */
+  }
 }
-
-
-/* --- 3. 特定元素覆盖 (已确认无误) --- */
-
-/* 博客主标题 self.find() */
-h1.title {
-  font-family: "BlogTitleHand", cursive !important;
-  font-size: 3.8em !important;
-  font-weight: 400 !important;
-  letter-spacing: 0.04em !important;
-}
-
-/* 其他各级标题、副标题、文章链接等 */
-h2, h3, h4, .subtitle, .post-title, .VPDocAsideLink, .title.link {
-  font-family: "BlogTitleSerif", "BlogBodySerif", serif !important;
-}
-
-/* 导航链接 */
-.nav-link, .vp-nav-link, .VPNavBarMenuLink {
-  font-family: "BlogBodySerif", serif !important;
-}
-
-/* 按钮 */
-.button, .vp-button, .VPButton {
-  font-family: "BlogBodySerif", serif !important;
-}
-
-
-/* --- 4. 代码字体最终修正 (本次核心改动) --- */
-
-/* 
-  使用更具体的选择器，确保它的优先级高于代码高亮插件的默认样式，
-  同时不会影响到其他任何元素的字体。
-*/
-div[class*="language-"] pre,
-div[class*="language-"] code,
-.vp-doc pre,
-.vp-doc code {
-  font-family: "BlogCode", monospace !important;
-}
-/*
-meow
-*/
