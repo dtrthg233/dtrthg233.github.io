@@ -1,8 +1,8 @@
 /* =================================================================== */
-/*             最终字体方案 (V3 - 稳定版)                              */
+/*             最终方案 V4 (字体 + 背景 + 代码字体修正)                  */
 /* =================================================================== */
 
-/* --- 1. 字体注册 (这部分保持不变) --- */
+/* --- 1. 字体注册 (已确认无误) --- */
 @font-face {
   font-family: "BlogTitleHand";
   src: url("/fonts/PatrickHand.ttf");
@@ -39,16 +39,24 @@
 }
 
 
-/* --- 2. 全局字体应用与覆盖 (全新策略) --- */
+/* --- 2. 全局样式应用 (已确认无误) --- */
 
-/* 
-  策略：首先用一个非常通用的规则，为网站的所有元素（包括文章内容）
-  都设置好基础的宋体。然后再对特定元素进行覆盖。
-*/
-
+/* 建立一个坚固的底座，确保文章等基础内容字体正确 */
 :root, body, div, p, span, a, li {
   font-family: "BlogBodySerif", serif !important;
 }
+
+/* 强制注入背景图片 */
+body {
+  background-image: url('/images/bg.png') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+}
+
+
+/* --- 3. 特定元素覆盖 (已确认无误) --- */
 
 /* 博客主标题 self.find() */
 h1.title {
@@ -68,12 +76,21 @@ h2, h3, h4, .subtitle, .post-title, .VPDocAsideLink, .title.link {
   font-family: "BlogBodySerif", serif !important;
 }
 
-/* 代码 */
-pre, code {
-  font-family: "BlogCode", monospace !important;
-}
-
 /* 按钮 */
 .button, .vp-button, .VPButton {
   font-family: "BlogBodySerif", serif !important;
+}
+
+
+/* --- 4. 代码字体最终修正 (本次核心改动) --- */
+
+/* 
+  使用更具体的选择器，确保它的优先级高于代码高亮插件的默认样式，
+  同时不会影响到其他任何元素的字体。
+*/
+div[class*="language-"] pre,
+div[class*="language-"] code,
+.vp-doc pre,
+.vp-doc code {
+  font-family: "BlogCode", monospace !important;
 }
