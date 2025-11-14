@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>self.find()</title>
+        <link>undefined</link>
+        <description>my blog</description>
+        <lastBuildDate>Fri, 14 Nov 2025 06:03:55 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>dtrthg</generator>
+        <language>zh</language>
+        <copyright>Copyright © 2020-present dtrthg</copyright>
+        <item>
+            <title><![CDATA[自用模板]]></title>
+            <link>undefined/posts/2025.10/自用模板</link>
+            <guid>undefined/posts/2025.10/自用模板</guid>
+            <pubDate>Tue, 28 Oct 2025 00:00:00 GMT</pubDate>
+            <author>3442804166@qq.com (dtrthg)</author>
+        </item>
+        <item>
+            <title><![CDATA[last]]></title>
+            <link>undefined/posts/2025.10/last</link>
+            <guid>undefined/posts/2025.10/last</guid>
+            <pubDate>Fri, 24 Oct 2025 00:00:00 GMT</pubDate>
+            <author>3442804166@qq.com (dtrthg)</author>
+        </item>
+        <item>
+            <title><![CDATA[周末模拟赛总结]]></title>
+            <link>undefined/posts/2025.10/模拟赛总结</link>
+            <guid>undefined/posts/2025.10/模拟赛总结</guid>
+            <pubDate>Mon, 20 Oct 2025 00:00:00 GMT</pubDate>
+            <author>3442804166@qq.com (dtrthg)</author>
+        </item>
+        <item>
+            <title><![CDATA[终于好了...qwq]]></title>
+            <link>undefined/posts/2025.10/终于建好了</link>
+            <guid>undefined/posts/2025.10/终于建好了</guid>
+            <pubDate>Mon, 20 Oct 2025 00:00:00 GMT</pubDate>
+            <author>3442804166@qq.com (dtrthg)</author>
+        </item>
+        <item>
+            <link>undefined/posts/2025.11/11月份做题总结</link>
+            <guid>undefined/posts/2025.11/11月份做题总结</guid>
+            <author>3442804166@qq.com (dtrthg)</author>
+        </item>
+        <item>
+            <link>undefined/posts/2025.11/noip模拟赛总结</link>
+            <guid>undefined/posts/2025.11/noip模拟赛总结</guid>
+            <author>3442804166@qq.com (dtrthg)</author>
+        </item>
+    </channel>
+</rss>
